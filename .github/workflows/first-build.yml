@@ -1,4 +1,4 @@
-name: Correct Robot 
+name: Correct Robot
 on: workflow_dispatch
 permissions:
   contents: write
@@ -8,6 +8,6 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - name: file generate
-        run: echo "test" 
-      - name: Commit & push 
-      run: echo "commit & push"
+        run: echo "test"
+      - name: Commit & push
+        run: echo "commit & push"
