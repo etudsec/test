@@ -6,10 +6,10 @@ jobs:
   corrector:
     runs_on: ubuntu_latest
     steps:
-      -users: actions/checkout@v5
-      -name: file generate
+      - uses: actions/checkout@v5
+      - name: file generate
         run: echo "test" 
-      -name: Commit & push 
+      - name: Commit & push 
       run: git config user.name "github_actions[bot]"
       git config user.mail "github_actions[bot]@users.noreply.github.com"
       git add lastbuild.txt
