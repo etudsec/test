@@ -9,7 +9,7 @@ jobs:
       -users: actions/checkout@v5
       -name: file generate
       run: date "+Last build: %d/%m/%y %H:%M UTC " > Lastbuild.txt
-      -name: Commit & push 
+    -name: Commit & push 
       run: |
       git config user.name "github_actions[bot]"
       git config user.mail "github_actions[bot]@users.noreply.github.com"
